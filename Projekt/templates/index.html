@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <title>Глобальное потепление</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav main-nav">
+        <ul class="main-nav__list main-list">
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#home">Главная страница!</a>
+          </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#about">Краткая информация</a>
+          </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#skills">Причины проблемы</a>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#problem">Способы решение</a>
+          </li>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <!-- Секция превью -->
+      <section class="main__home home" id="home">
+        <h1 class="home__title">ГЛОБАЛЬНОЕ ПОТЕПЛЕНИЕ</h1>
+        <p class="home__subtitle">КРАТКОЕ ИНФО, ПРИЧИНЫ ПРОБЛЕМЫ, СПОСОБЫ РЕШЕНИЕ</p>
+        <img
+            class="info-block__img"
+            src="../static/img/ima.png"
+            alt="me"
+            width="750"
+            height="750"
+            />
+      </section>
+      <!-- Секция с рассказом о себе -->
+      <section class="main__about about" id="about">
+        <h2 class="about__title">КРАТКАЯ ИНФОРМАЦИЯ!</h2>
+        <div class="about__info info-block">
+          <p class="info-block__text">
+            Глобальное потепление — это долгосрочное увеличение средней температуры на Земле, 
+            вызванное человеческой деятельностью, особенно сжиганием ископаемого топлива (уголь, нефть, газ),
+            что приводит к накоплению парниковых газов (например, CO2) в атмосфере. Это изменение климата вызывает таяние ледников,
+            повышение уровня мирового океана, изменение погодных условий, увеличение частоты экстремальных погодных явлений,
+            таких как ураганы, засухи и наводнения. В результате страдает экосистема,
+            сельское хозяйство, водоснабжение и здоровье людей. Борьба с глобальным потеплением требует снижения выбросов
+            парниковых газов и перехода к более устойчивым источникам энергии.
+          <div class=""></div>
+          </p>
+          <img
+            class="info-block__img"
+            src="../static/img/Globalnoe-poteplenie.jpg"
+            alt="me"
+            width="500"
+            height="500"
+          />
+        </div>
+      </section>
+      <!-- Секция со скиллами -->
+      <section class="main__skills skills" id="skills">
+        <h2 class="skills__title">ПРИЧИНЫ ПРОБЛЕМЫ</h2>
+        <form action="/" method="POST">
+          <ul class="skills__list skills-list">
+            <table>
+            <tr>
+            <td>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/zhil.jpg"
+                alt="python"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">1. Сжигание ископаемого топлива</span>
+              <input class="skill__button" type="submit" name="button_zhik" value="ПОСМОТРЕТЬ ПРОЕКТ">
+            </li>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/omish.jpg"
+                alt="discord"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">2. Промышленное производство</span>
+              <input class="skill__button" type="submit" name="button_prom" value="ПОСМОТРЕТЬ ПРОЕКТ">
+            </li>
+            </td>
+            </tr>
+            </table>
+
+            <table>
+            <tr>
+            <td>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/se.jpg"
+                alt="html"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">3. Сельское хозяйство</span>
+              <input class="skill__button" type="submit" name="button_selo" value="ПОСМОТРЕТЬ ПРОЕКТ">
+            </li>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/vy.jpg"
+                alt="SQL"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">4. Вылесение (дефорестация)</span>
+              <input class="skill__button" type="submit" name="button_vysel" value="ПОСМОТРЕТЬ ПРОЕКТ">
+            </li>
+            </td>
+            </tr>
+            </table>
+
+            <table>
+            <tr>
+            <td>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/ur.jpg"
+                alt="SQL"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">5. Землепользование, урбанизация</span>
+              <input class="skill__button" type="submit" name="button_urban" value="ПОСМОТРЕТЬ ПРОЕКТ">
+            </li>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/pas.jpg"
+                alt="SQL"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">6. Транспорт</span>
+              <input class="skill__button" type="submit" name="button_auto" value="ПОСМОТРЕТЬ ПРОЕКТ">
+            </li>
+          </td>
+          </tr>
+          </table>
+          </ul>
+        </form>
+        {% if button_zhik%}
+        <div class="skills__project project" id="project">
+          <h2>Сжигание ископаемого топлива</h2>
+          <li class="skills-list__skill skill">
+            <img
+              class="skill__img"
+              src="../static/img/gan.jpg"
+              alt="SQL"
+              width="1000"
+              height="500"
+            />
+            <h3>Ископаемые виды топлива, такие как уголь, нефть и природный газ, широко используются для производства электроэнергии, 
+              отопления и транспорта. Когда эти материалы сжигаются, они выделяют углекислый газ (CO2) и другие парниковые газы. 
+              CO2 является основным парниковым газом, который задерживает тепло в атмосфере и усиливает парниковый эффект. 
+              В последние десятилетия из-за роста промышленности, транспорта и потребления энергии выбросы CO2 значительно увеличились, 
+              что стало одним из главных факторов глобального потепления.</h3>
+          </li>
+          </div>
+        {% endif %}
+
+        {% if button_prom%}
+          <div class="skills__project project" id="project">
+            <h2>Промышленное производство</h2>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/chel.jpg"
+                alt="SQL"
+                width="1000"
+                height="500"
+              />
+              <h3>Промышленный сектор, включающий такие отрасли, как металлургия, химическая промышленность и производство цемента, 
+                является крупным источником выбросов парниковых газов. Заводы и фабрики используют большое количество энергии, 
+                обычно получаемой из ископаемого топлива, что приводит к выбросу CO2. Кроме того, некоторые промышленные процессы, 
+                такие как производство цемента, сами по себе выделяют CO2. Химическая промышленность также ответственна за выбросы 
+                других парниковых газов, таких как фторсодержащие газы, которые обладают очень высоким потенциалом глобального 
+                потепления.</h3>
+            </li>
+            </div>
+        {% endif %}
+
+        {% if button_selo%}
+        <div class="skills__project project" id="project">
+          <h2>Сельское хозяйство</h2>
+          <li class="skills-list__skill skill">
+            <img
+              class="skill__img"
+              src="../static/img/kombai.jpg"
+              alt="SQL"
+              width="1000"
+              height="500"
+            />
+            <h3>Сельское хозяйство является важным источником парниковых газов, особенно метана (CH4) и закиси азота (N2O). 
+              Метан выделяется в процессе пищеварения крупного рогатого скота (коровы, овцы) и при разложении органических веществ в 
+              условиях недостатка кислорода, например, на рисовых полях. Закись азота выделяется при использовании азотных удобрений, 
+              которые широко применяются для повышения урожайности. Эти газы обладают гораздо более высоким потенциалом глобального 
+              потепления по сравнению с CO2, несмотря на то, что их концентрация в атмосфере значительно ниже.</h3>
+          </li>
+          </div>
+        {% endif %}
+
+        {% if button_vysel%}
+        <div class="skills__project project" id="project">
+          <h2>Вылесение (дефорестация)</h2>
+          <li class="skills-list__skill skill">
+            <img
+              class="skill__img"
+              src="../static/img/vyrubka-lesa.jpg"
+              alt="SQL"
+              width="1000"
+              height="500"
+            />
+            <h3>Леса играют ключевую роль в поглощении углекислого газа из атмосферы. Однако массовая вырубка лесов, особенно 
+              тропических, ведет к утрате этого природного механизма поглощения CO2. Деревья, которые вырубаются или сжигаются, 
+              высвобождают углекислый газ, накопленный в их биомассе, что увеличивает общую концентрацию CO2 в атмосфере. Дефорестация 
+              также приводит к утрате биоразнообразия и нарушению водного цикла, что усугубляет последствия изменения климата.</h3>
+          </li>
+          </div>
+        {% endif %}
+
+        {% if button_urban%}
+        <div class="skills__project project" id="project">
+          <h2>Землепользование, урбанизация</h2>
+          <li class="skills-list__skill skill">
+            <img
+              class="skill__img"
+              src="../static/img/urok.jpg"
+              alt="SQL"
+              width="1000"
+              height="500"
+            />
+            <h3>Изменение землепользования, связанное с расширением городов, строительством инфраструктуры и интенсивным сельским 
+              хозяйством, приводит к деградации природных экосистем, таких как леса, болота и пастбища, которые ранее служили 
+              поглотителями CO2. Урбанизация увеличивает площадь поверхностей, которые нагреваются на солнце и выделяют тепло в 
+              атмосферу (например, асфальт, бетон), что усиливает эффект "теплового острова". Это приводит к дополнительному нагреву 
+              окружающей среды и увеличению энергозатрат на охлаждение зданий.</h3>
+          </li>
+          </div>
+        {% endif %}
+
+        {% if button_auto%}
+        <div class="skills__project project" id="project">
+          <h2>Землепользование, урбанизация</h2>
+          <li class="skills-list__skill skill">
+            <img
+              class="skill__img"
+              src="../static/img/bus.jpg"
+              alt="SQL"
+              width="1000"
+              height="500"
+            />
+            <h3>Транспортный сектор является одним из крупнейших источников выбросов парниковых газов. Автомобили, грузовики, 
+              самолеты, корабли и поезда сжигают огромное количество бензина, дизельного топлива и авиационного керосина, что приводит 
+              к выделению CO2 и других вредных веществ. Несмотря на развитие технологий и повышение топливной эффективности, общий 
+              объем выбросов от транспорта продолжает расти из-за увеличения числа транспортных средств и объемов перевозок. Вклад 
+              авиации в глобальное потепление особенно значителен из-за выбросов на высоких высотах, где их воздействие на климат 
+              усиливается.</h3>
+          </li>
+          </div>
+        {% endif %}
+      </section>
+
+
+
+
+      <section class="main__skills skills" id="problem">
+        <h2 class="skills__title">СПОСОБЫ РЕШЕНИЯ</h2>
+        <form action="/" method="POST">
+          <ul class="skills__list skills-list">
+            <table>
+            <tr>
+            <td>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/eco.jpg"
+                alt="python"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">1. Сократить выбросы парниковых газов</span>
+              <input class="skill__button" type="submit" name="button_gas" value="ПОСМОТРЕТЬ ПРОЕКТ">
+            </li>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/tech.png"
+                alt="discord"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">2. Использовать новые технологии</span>
+              <input class="skill__button" type="submit" name="button_tech" value="ПОСМОТРЕТЬ ПРОЕКТ">
+            </li>
+            </td>
+            </tr>
+            </table>
+
+            <table>
+            <tr>
+            <td>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/zas.webp"
+                alt="html"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">3. Защищать и восстанавливать природу</span>
+              <input class="skill__button" type="submit" name="button_zachran" value="ПОСМОТРЕТЬ ПРОЕКТ">
+            </li>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/i.jpg"
+                alt="SQL"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">4. Умно использовать землю и сельское хозяйство</span>
+              <input class="skill__button" type="submit" name="button_umelo" value="ПОСМОТРЕТЬ ПРОЕКТ">
+            </li>
+            </td>
+            </tr>
+            </table>
+
+
+            <table>
+            <tr>
+            <td>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/fin.webp"
+                alt="html"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">5. Переход к устойчивой экономике</span>
+              <input class="skill__button" type="submit" name="button_finansis" value="ПОСМОТРЕТЬ ПРОЕКТ">
+            </li>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/sot.jpg"
+                alt="SQL"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">6. Сотрудничать на международном уровне</span>
+              <input class="skill__button" type="submit" name="button_sotr" value="ПОСМОТРЕТЬ ПРОЕКТ">
+            </li>
+            </td>
+            </tr>
+            </table>
+
+            <table>
+            <tr>
+            <td>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/info.jpg"
+                alt="html"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">7. Обучать и информировать людей</span>
+              <input class="skill__button" type="submit" name="button_ucit" value="ПОСМОТРЕТЬ ПРОЕКТ">
+            </li>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/izmena.jpg"
+                alt="SQL"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">8. Подготовиться к изменениям климата</span>
+              <input class="skill__button" type="submit" name="button_izmenc" value="ПОСМОТРЕТЬ ПРОЕКТ">
+            </li>
+            </td>
+            </tr>
+            </table>
+          </ul>
+        </form>
+        {% if button_gas%}
+        <div class="skills__project project" id="project"></div>
+          <h2><b><u>Сократить выбросы парниковых газов</u></b></h2>
+          <li class="skills-list__skill skill">
+            <img
+              class="skill__img"
+              src="../static/img/gan.jpg"
+              alt="SQL"
+              width="1000"
+              height="500"
+            />
+            <h3><b><u>1. Перейти на возобновляемую энергию:</u></b> Использовать солнечную, ветровую и другие чистые источники 
+              энергии вместо угля и нефти.</h3>
+            <h3><b><u>2. Повысить энергоэффективность:</u></b> Использовать меньше энергии, делая дома и предприятия более эффективными, 
+              например, устанавливая энергосберегающие лампочки и утепляя здания.</h3>
+            <h3><b><u>3. Электрифицировать транспорт:</u></b> Перейти на электромобили и общественный транспорт с низкими выбросами.</h3>
+          </li>
+          </div>
+        {% endif %}
+
+        {% if button_tech%}
+        <div class="skills__project project" id="project"></div>
+          <h2><b><u>Использовать новые технологии</u></b></h2>
+          <li class="skills-list__skill skill">
+            <img
+              class="skill__img"
+              src="../static/img/technologic.jpg"
+              alt="SQL"
+              width="1000"
+              height="500"
+            />
+            <h3><b><u>1. Улавливать и хранить углерод</u></b> Разработать технологии, которые захватывают CO2 на заводах и 
+              электростанциях и хранят его под землей.</h3>
+            <h3><b><u>2. Развивать водородную энергетику:</u></b> Использовать водород как чистый вид топлива.</h3>
+          </li>
+          </div>
+        {% endif %}
+
+        {% if button_zachran%}
+        <div class="skills__project project" id="project"></div>
+          <h2><b><u>Защищать и восстанавливать природу</u></b></h2>
+          <li class="skills-list__skill skill">
+            <img
+              class="skill__img"
+              src="../static/img/zasuvk.jpg"
+              alt="SQL"
+              width="1000"
+              height="500"
+            />
+            <h3><b><u>1. Сажать больше деревьев:</u></b> Леса поглощают CO2, поэтому восстановление утраченных лесов помогает 
+              снизить уровень углекислого газа.</h3>
+            <h3><b><u>2. Сохранять экосистемы:</u></b> Охранять болота, мангровые леса и другие природные зоны, которые помогают 
+              регулировать климат.</h3>
+          </li>
+        </div>
+        {% endif %}
+
+        {% if button_umelo%}
+        <div class="skills__project project" id="project"></div>
+          <h2><b><u>Умно использовать землю и сельское хозяйство</u></b></h2>
+          <li class="skills-list__skill skill">
+            <img
+              class="skill__img"
+              src="../static/img/lego.jpg"
+              alt="SQL"
+              width="1000"
+              height="500"
+            />
+            <h3><b><u>1. Снизить выбросы от сельского хозяйства:</u></b> Использовать меньше удобрений и внедрять более устойчивые 
+              методы ведения сельского хозяйства.</h3>
+            <h3><b><u>2. Сочетать сельское хозяйство с лесами:</u></b> Выращивать деревья вместе с сельскохозяйственными культурами, 
+              что помогает поглощать углерод.</h3>
+          </li>
+        </div>
+        {% endif %}
+
+        {% if button_finansis%}
+        <div class="skills__project project" id="project"></div>
+          <h2><b><u>Переход к устойчивой экономике</u></b></h2>
+          <li class="skills-list__skill skill">
+            <img
+              class="skill__img"
+              src="../static/img/finannsy_2.png"
+              alt="SQL"
+              width="1000"
+              height="500"
+            />
+            <h3><b><u>1. Уменьшить отходы и перерабатывать больше:</u></b> Меньше выбрасывать и больше перерабатывать, чтобы сократить 
+              выбросы от производства и утилизации.</h3>
+            <h3><b><u>2. Производить и потреблять устойчиво:</u></b> Изготавливать товары с минимальным вредом для окружающей среды и 
+              поддерживать длительное использование продуктов.</h3>
+          </li>
+        </div>
+        {% endif %}
+
+        {% if button_sotr%}
+        <div class="skills__project project" id="project"></div>
+          <h2><b><u>Сотрудничать на международном уровне</u></b></h2>
+          <li class="skills-list__skill skill">
+            <img
+              class="skill__img"
+              src="../static/img/mir.jpg"
+              alt="SQL"
+              width="1000"
+              height="500"
+            />
+            <h3><b><u>1. Соблюдать международные соглашения:</u></b> Страны должны выполнять обязательства по сокращению выбросов, 
+              такие как Парижское соглашение.</h3>
+            <h3><b><u>2. Финансировать экологические проекты:</u></b> Поддерживать развивающиеся страны в переходе на чистую энергию 
+              и устойчивое развитие.</h3>
+          </li>
+      </div>
+      {% endif %}
+
+      {% if button_ucit%}
+        <div class="skills__project project" id="project"></div>
+          <h2><b><u>Обучать и информировать людей</u></b></h2>
+          <li class="skills-list__skill skill">
+            <img
+              class="skill__img"
+              src="../static/img/insttru.webp"
+              alt="SQL"
+              width="1000"
+              height="500"
+            />
+            <h3><b><u>1. Повышать осведомленность:</u></b> Обучать людей о причинах и последствиях глобального потепления и о том, 
+              что можно сделать, чтобы помочь.</h3>
+            <h3><b><u>2. Продвигать экологичный образ жизни:</u></b> Призывать людей к использованию общественного транспорта, снижению 
+              энергопотребления и сокращению потребления мяса.</h3>
+          </li>
+      </div>
+      {% endif %}
+
+      {% if button_izmenc%}
+        <div class="skills__project project" id="project"></div>
+          <h2><b><u>Подготовиться к изменениям климата</u></b></h2>
+          <li class="skills-list__skill skill">
+            <img
+              class="skill__img"
+              src="../static/img/teplota.jpg"
+              alt="SQL"
+              width="1000"
+              height="500"
+            />
+            <h3><b><u>1. Строить устойчивую инфраструктуру:</u></b> Проектировать здания и дороги, способные выдержать экстремальные 
+              погодные условия.</h3>
+            <h3><b><u>2. Защищать побережья:</u></b> Строить защитные сооружения от повышения уровня моря и укреплять береговые линии.</h3>
+          </li>
+        </div>
+      {% endif %}
+      </section>
+    </main>
+    </footer>
+  </body>
+</html>
